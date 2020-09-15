@@ -1,0 +1,11 @@
+print("Olá! Este programa converte kilometros em milhas.")
+escolha = (input("Quer fazer uma coversão (s/n)? "))
+
+while escolha == "s":
+    kilometros = int(input("Introduza o número de kilometros: "))
+    milhas = kilometros * 0.621371
+    print("Milhas: " + str(milhas))
+    escolha = (input("Quer fazer outra conversão (s/n)? "))
+    escolha = escolha.lower()
+
+print("Obrigada! Até à próxima!")
