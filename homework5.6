@@ -1,0 +1,17 @@
+import random
+
+dictionary = {"Portugal": "Lisbon",
+              "Spain": "Madrid",
+              "Italy": "Rome",
+              "Greece": "Athens"}
+
+country = random.choice(list(dictionary.keys()))
+
+print("Hi! Welcome to our geography quiz!")
+
+pais_escolhido = input("What is the capital city of " + country + "?")
+
+if pais_escolhido == dictionary[country]:
+    print("Well done! You are correct!")
+else:
+    print("Sorry... you are not correct.")
